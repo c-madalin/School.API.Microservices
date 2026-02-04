@@ -1,0 +1,49 @@
+<div class="container">
+  <h1>Catalog Studenți</h1>
+
+  <div class="card add-form">
+    <h3>Adaugă Student Nou</h3>
+    <div class="form-group">
+      <label>Nume:</label>
+      <input type="text" [(ngModel)]="studentNou.nume" placeholder="Ex: Popescu Ion">
+    </div>
+    
+    <div class="form-group">
+      <label>Nota:</label>
+      <input type="number" [(ngModel)]="studentNou.nota" min="1" max="10">
+    </div>
+
+    <button (click)="adauga()" class="btn-save">Salvează</button>
+  </div>
+
+  <hr>
+
+  <h3>Lista Studenți</h3>
+  
+  <table class="student-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nume</th>
+        <th>Medie</th>
+        <th>Acțiuni</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let s of studenti">
+        <td>{{ s.id }}</td>
+        <td>{{ s.nume }}</td>
+        <td>
+          <span [class.picat]="s.medie < 5" [class.promovat]="s.medie >= 5">
+            {{ s.medie }}
+          </span>
+        </td>
+        <td>
+          <button (click)="sterge(s.id)" class="btn-delete">Șterge</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <p *ngIf="studenti.length === 0">Nu există studenți în baza de date.</p>
+</div>

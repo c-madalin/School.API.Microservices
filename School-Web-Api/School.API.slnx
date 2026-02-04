@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="School.API.AngularClient/School.API.AngularClient.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="School.API/School.API.csproj" />
+</Solution>
