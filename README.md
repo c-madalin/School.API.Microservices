@@ -1,8 +1,8 @@
-# School Web API
+# School Web API Microservices
 
 
 A full-stack Student Management system built with **Visual Studio 2026**. This project demonstrates a clean **3-Tier Architecture** using **.NET Web API (C#)** for the backend and **Angular** for the frontend, persisting data in **PostgreSQL**.
-
+Now , based on the School Web Api , that is bsically a microservice , now i want to evolve the app and add the course anrolment microservice 
 ### Key Architecture
 * **Repository Layer:** Handles pure CRUD operations.
 * **Service Layer:** Manages business logic and data validation.
