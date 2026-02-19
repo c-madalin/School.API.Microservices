@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="Course.API/School2.API.csproj" Id="304ef94d-a57e-41f2-9c8b-e20e048c15f3" />
   <Project Path="School.API.AngularClient/School.API.AngularClient.esproj">
     <Build />
     <Deploy />
